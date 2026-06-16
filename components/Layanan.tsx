@@ -26,19 +26,19 @@ export default function Layanan() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
           {SERVICES.map((service) => {
             const IconComponent = SERVICE_ICONS[service.icon] || Car
             return (
               <div
                 key={service.title}
-                className="card group hover:shadow-lg hover:border-primary-200 border border-gray-100"
+                className="card p-3 sm:p-6 group hover:shadow-lg hover:border-primary-200 border border-gray-100"
               >
-                <div className="w-14 h-14 bg-gradient-to-br from-primary-400 to-primary-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <IconComponent className="w-7 h-7 text-white" />
+                <div className="w-10 h-10 sm:w-14 sm:h-14 bg-gradient-to-br from-primary-400 to-primary-600 rounded-xl flex items-center justify-center mb-3 sm:mb-4 group-hover:scale-110 transition-transform">
+                  <IconComponent className="w-5 h-5 sm:w-7 sm:h-7 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">{service.title}</h3>
-                <p className="text-gray-600">{service.description}</p>
+                <h3 className="text-sm sm:text-xl font-bold text-gray-900 mb-1 sm:mb-2">{service.title}</h3>
+                <p className="text-gray-600 text-xs sm:text-sm">{service.description}</p>
               </div>
             )
           })}

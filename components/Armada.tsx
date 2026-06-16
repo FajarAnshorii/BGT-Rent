@@ -112,14 +112,14 @@ export default function Armada() {
         </div>
 
         {/* Fleet Grid - Using Real Images */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
           {FLEET_IMAGES.slice(0, 3).map((imageUrl, index) => (
             <div
               key={index}
               className="card group hover:shadow-xl hover:border-primary-200 border border-gray-100 overflow-hidden"
             >
               {/* Vehicle Image */}
-              <div className="relative h-48 bg-gray-100 overflow-hidden">
+              <div className="relative h-32 sm:h-48 bg-gray-100 overflow-hidden">
                 <Image
                   src={imageUrl}
                   alt={FLEET[index]?.title || `Armada ${index + 1}`}
@@ -128,19 +128,19 @@ export default function Armada() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                <div className="absolute bottom-4 left-4 right-4">
-                  <span className="inline-block px-3 py-1 bg-primary-500 text-white text-xs font-medium rounded-full">
+                <div className="absolute bottom-3 left-3 sm:bottom-4 sm:left-4 right-3 sm:right-4">
+                  <span className="inline-block px-2 sm:px-3 py-0.5 sm:py-1 bg-primary-500 text-white text-[10px] sm:text-xs font-medium rounded-full">
                     Tersedia
                   </span>
                 </div>
               </div>
 
               {/* Content */}
-              <div className="p-6">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">
+              <div className="p-3 sm:p-6">
+                <h3 className="text-sm sm:text-lg font-bold text-gray-900 mb-1 sm:mb-2">
                   {FLEET[index]?.title || `Armada ${index + 1}`}
                 </h3>
-                <p className="text-gray-600 text-sm">
+                <p className="text-gray-600 text-xs sm:text-sm">
                   {FLEET[index]?.description || 'Kendaraan operasional siap pakai untuk berbagai kebutuhan.'}
                 </p>
               </div>
@@ -149,7 +149,7 @@ export default function Armada() {
         </div>
 
         {/* Additional Fleet - Two Cards */}
-        <div className="grid md:grid-cols-2 gap-6 mt-6 max-w-2xl mx-auto">
+        <div className="grid grid-cols-2 gap-3 sm:gap-6 mt-4 sm:mt-6 max-w-2xl mx-auto">
           {FLEET_IMAGES.slice(3, 5).map((imageUrl, index) => {
             const actualIndex = index + 3;
             const item = FLEET[actualIndex];
@@ -161,7 +161,7 @@ export default function Armada() {
                 className="card group hover:shadow-xl hover:border-primary-200 border border-gray-100 overflow-hidden"
               >
                 {/* Vehicle Image */}
-                <div className="relative h-40 bg-gray-100 overflow-hidden">
+                <div className="relative h-32 sm:h-40 bg-gray-100 overflow-hidden">
                   {isAmbulance ? (
                     <AmbulanceImageSlider />
                   ) : (
@@ -176,19 +176,19 @@ export default function Armada() {
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                     </>
                   )}
-                  <div className="absolute bottom-4 left-4 right-4 z-20">
-                    <span className="inline-block px-3 py-1 bg-primary-500 text-white text-xs font-medium rounded-full">
+                  <div className="absolute bottom-3 left-3 sm:bottom-4 sm:left-4 right-3 sm:right-4 z-20">
+                    <span className="inline-block px-2 sm:px-3 py-0.5 sm:py-1 bg-primary-500 text-white text-[10px] sm:text-xs font-medium rounded-full">
                       Tersedia
                     </span>
                   </div>
                 </div>
 
                 {/* Content */}
-                <div className="p-5">
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">
+                <div className="p-3 sm:p-5">
+                  <h3 className="text-sm sm:text-lg font-bold text-gray-900 mb-1 sm:mb-2">
                     {item?.title || `Armada ${actualIndex + 1}`}
                   </h3>
-                  <p className="text-gray-600 text-sm">
+                  <p className="text-gray-600 text-xs sm:text-sm">
                     {item?.description || 'Kendaraan siap pakai untuk berbagai kebutuhan.'}
                   </p>
                 </div>

@@ -31,53 +31,53 @@ export default function VisiMisi() {
         {/* Misi */}
         <div className="max-w-4xl mx-auto">
           <h3 className="text-2xl font-bold text-gray-900 text-center mb-8">Misi</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="card hover:border-primary-200 border border-gray-100">
-              <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center mb-4">
-                <span className="text-xl font-bold text-primary-600">1</span>
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
+            <div className="card p-3 sm:p-6 hover:border-primary-200 border border-gray-100">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary-100 rounded-xl flex items-center justify-center mb-3 sm:mb-4">
+                <span className="text-lg sm:text-xl font-bold text-primary-600">1</span>
               </div>
-              <h4 className="font-bold text-gray-900 mb-2">Kirim Tepat Waktu</h4>
-              <p className="text-gray-600 text-sm">
+              <h4 className="text-sm sm:text-lg font-bold text-gray-900 mb-1 sm:mb-2">Kirim Tepat Waktu</h4>
+              <p className="text-gray-600 text-xs sm:text-sm">
                 Operasional berjalan menggunakan jadwal, tracking real-time, dan minim delay.
               </p>
             </div>
 
-            <div className="card hover:border-primary-200 border border-gray-100">
-              <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center mb-4">
-                <span className="text-xl font-bold text-primary-600">2</span>
+            <div className="card p-3 sm:p-6 hover:border-primary-200 border border-gray-100">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary-100 rounded-xl flex items-center justify-center mb-3 sm:mb-4">
+                <span className="text-lg sm:text-xl font-bold text-primary-600">2</span>
               </div>
-              <h4 className="font-bold text-gray-900 mb-2">Jaga Keamanan</h4>
-              <p className="text-gray-600 text-sm">
+              <h4 className="text-sm sm:text-lg font-bold text-gray-900 mb-1 sm:mb-2">Jaga Keamanan</h4>
+              <p className="text-gray-600 text-xs sm:text-sm">
                 Armada terawat, SOP packing, dan asuransi aktif untuk mendukung keamanan layanan.
               </p>
             </div>
 
-            <div className="card hover:border-primary-200 border border-gray-100">
-              <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center mb-4">
-                <span className="text-xl font-bold text-primary-600">3</span>
+            <div className="card p-3 sm:p-6 hover:border-primary-200 border border-gray-100">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary-100 rounded-xl flex items-center justify-center mb-3 sm:mb-4">
+                <span className="text-lg sm:text-xl font-bold text-primary-600">3</span>
               </div>
-              <h4 className="font-bold text-gray-900 mb-2">Bangun Relasi Jangka Panjang</h4>
-              <p className="text-gray-600 text-sm">
+              <h4 className="text-sm sm:text-lg font-bold text-gray-900 mb-1 sm:mb-2">Bangun Relasi Jangka Panjang</h4>
+              <p className="text-gray-600 text-xs sm:text-sm">
                 Fokus melayani UMKM, agen, perusahaan, instansi, dan pelanggan rutin.
               </p>
             </div>
 
-            <div className="card hover:border-primary-200 border border-gray-100">
-              <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center mb-4">
-                <span className="text-xl font-bold text-primary-600">4</span>
+            <div className="card p-3 sm:p-6 hover:border-primary-200 border border-gray-100">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary-100 rounded-xl flex items-center justify-center mb-3 sm:mb-4">
+                <span className="text-lg sm:text-xl font-bold text-primary-600">4</span>
               </div>
-              <h4 className="font-bold text-gray-900 mb-2">Pakai Teknologi Sederhana</h4>
-              <p className="text-gray-600 text-sm">
+              <h4 className="text-sm sm:text-lg font-bold text-gray-900 mb-1 sm:mb-2">Pakai Teknologi Sederhana</h4>
+              <p className="text-gray-600 text-xs sm:text-sm">
                 Menggunakan GPS, WhatsApp tracking, Google Sheet, atau software sederhana agar operasional lebih efisien.
               </p>
             </div>
 
-            <div className="card hover:border-primary-200 border border-gray-100 md:col-span-2 lg:col-span-2">
-              <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center mb-4">
-                <span className="text-xl font-bold text-primary-600">5</span>
+            <div className="card p-3 sm:p-6 hover:border-primary-200 border border-gray-100 col-span-2 md:col-span-2 lg:col-span-2">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary-100 rounded-xl flex items-center justify-center mb-3 sm:mb-4">
+                <span className="text-lg sm:text-xl font-bold text-primary-600">5</span>
               </div>
-              <h4 className="font-bold text-gray-900 mb-2">Tumbuh Sehat</h4>
-              <p className="text-gray-600 text-sm">
+              <h4 className="text-sm sm:text-lg font-bold text-gray-900 mb-1 sm:mb-2">Tumbuh Sehat</h4>
+              <p className="text-gray-600 text-xs sm:text-sm">
                 Menambah armada secara bertahap ketika okupansi sudah lebih dari 70% dan layanan berjalan stabil.
               </p>
             </div>

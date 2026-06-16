@@ -24,19 +24,19 @@ export default function MengapaBGT() {
 
         {/* Reasons Grid */}
         <div className="max-w-4xl mx-auto">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
             {WHY_CHOOSE_US.map((item, index) => {
               const IconComponent = WHY_ICONS[index]
               return (
                 <div
                   key={item.title}
-                  className="card group hover:shadow-lg hover:border-primary-200 border border-gray-100"
+                  className="card p-3 sm:p-6 group hover:shadow-lg hover:border-primary-200 border border-gray-100"
                 >
-                  <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary-500 transition-colors">
-                    <IconComponent className="w-6 h-6 text-primary-600 group-hover:text-white transition-colors" />
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary-100 rounded-xl flex items-center justify-center mb-3 sm:mb-4 group-hover:bg-primary-500 transition-colors">
+                    <IconComponent className="w-5 h-5 sm:w-6 sm:h-6 text-primary-600 group-hover:text-white transition-colors" />
                   </div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h3>
-                  <p className="text-gray-600 text-sm">{item.description}</p>
+                  <h3 className="text-sm sm:text-lg font-bold text-gray-900 mb-1 sm:mb-2">{item.title}</h3>
+                  <p className="text-gray-600 text-xs sm:text-sm">{item.description}</p>
                 </div>
               )
             })}
