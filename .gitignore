@@ -13,6 +13,7 @@ yarn-error.log*
 # OS Files
 .DS_Store
 Thumbs.db
+tsconfig.tsbuildinfo
 
 # Remember files / agent session files
 .remember/

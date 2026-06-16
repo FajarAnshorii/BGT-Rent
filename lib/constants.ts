@@ -3,14 +3,14 @@ export const COMPANY = {
   name: 'PT. BUMIRAYA GREEN TECH',
   brand: 'BGT Rent',
   tagline: '',
-  whatsapp: '6282131941609',
-  whatsappDisplay: '0821 3194 1609 - Amru',
+  whatsapp: '62816606660',
+  whatsappDisplay: '0816 6066 60 - Admin',
   address: 'Ruko Akasa Promenade C5 Jl. Astek Raya, Kel. Lengkong Timur, Kec. Serpong, Kota Tangerang Selatan 15301',
   serviceArea: 'Surabaya – Jakarta',
 }
 
 // WhatsApp Links
-export const WHATSAPP_LINK = 'https://wa.me/6282131941609'
+export const WHATSAPP_LINK = 'https://wa.me/62816606660'
 export const GOOGLE_MAPS_LINK = 'https://www.google.com/maps/search/?api=1&query=Ruko%20Akasa%20Promenade%20C5%20Jl.%20Astek%20 Raya%20Lengkong%20Timur%20Serpong%20Tangerang%20Selatan%2015301'
 
 // WhatsApp Messages

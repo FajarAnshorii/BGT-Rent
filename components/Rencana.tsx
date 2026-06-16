@@ -40,7 +40,7 @@ export default function Rencana() {
                   }`}
                 >
                   {/* Content */}
-                  <div className={`flex-1 ${index % 2 === 0 ? 'md:text-right' : 'md:text-left'}`}>
+                  <div className={`flex-1 pl-10 md:pl-0 ${index % 2 === 0 ? 'md:text-right' : 'md:text-left'}`}>
                     <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow inline-block">
                       <span className="inline-block px-3 py-1 bg-primary-500 text-white text-sm font-medium rounded-full mb-3">
                         {plan.phase}
@@ -51,7 +51,7 @@ export default function Rencana() {
                   </div>
 
                   {/* Center Dot */}
-                  <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-primary-500 rounded-full border-4 border-white shadow z-10" />
+                  <div className="absolute left-4 md:left-1/2 top-8 md:top-1/2 transform -translate-y-1/2 md:-translate-x-1/2 w-4 h-4 bg-primary-500 rounded-full border-4 border-white shadow z-10" />
 
                   {/* Spacer for alternating layout */}
                   <div className="flex-1 hidden md:block" />

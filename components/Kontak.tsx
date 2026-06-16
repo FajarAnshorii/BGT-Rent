@@ -27,7 +27,10 @@ export default function Kontak() {
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900 mb-1">{COMPANY.name}</h3>
-                  <p className="text-gray-600">{COMPANY.brand} - {COMPANY.tagline}</p>
+                  <p className="text-gray-600">
+                    {COMPANY.brand}
+                    {COMPANY.tagline && ` - ${COMPANY.tagline}`}
+                  </p>
                 </div>
               </div>
 

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { COMPANY, CORE_VALUES } from '@/lib/constants'
 import { Shield, Heart, MessageCircle } from 'lucide-react'
 
@@ -5,8 +6,18 @@ const VALUE_ICONS = [Shield, Heart, MessageCircle]
 
 export default function TentangKami() {
   return (
-    <section id="tentang" className="section-padding bg-white">
-      <div className="container-custom">
+    <section id="tentang" className="section-padding bg-white relative overflow-hidden">
+      {/* Peeking Ambulance */}
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-[48%] w-[700px] h-[578px] hidden lg:block pointer-events-none select-none z-10">
+        <Image
+          src="/images/ambulance-peek.png"
+          alt="Ambulans BGT Rent"
+          fill
+          className="object-contain"
+        />
+      </div>
+
+      <div className="container-custom relative z-10">
         {/* Section Header */}
         <div className="text-center mb-12">
           <span className="inline-block px-4 py-1.5 bg-primary-100 text-primary-700 rounded-full text-sm font-medium mb-4">

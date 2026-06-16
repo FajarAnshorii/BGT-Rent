@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { Menu, X } from 'lucide-react'
 import { NAV_LINKS, WHATSAPP_LINK, WHATSAPP_MESSAGES, COMPANY } from '@/lib/constants'
 
-const LOGO_URL = 'https://minimax-algeng-chat-tts-us.oss-us-east-1.aliyuncs.com/ccv2%2F2026-06-13%2FMiniMax-M2.7%2F2053411356652089514%2F06778f4a4d5a129639dc1eef919e7fb654c6e8e2aad6ba22863a5c70230556fd..png?Expires=1781367219&OSSAccessKeyId=LTAI5tCpJNKCf5EkQHSuL9xg&Signature=UAos%2BASI5UlllLfxmpjboYoO1Fw%3D'
+const LOGO_URL = '/logo/logo.png'
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -96,7 +96,7 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden bg-white border-t">
+        <div className="lg:hidden bg-white border-t border-gray-100 shadow-lg animate-fade-in">
           <div className="container-custom py-4">
             <nav className="flex flex-col gap-4">
               {NAV_LINKS.map((link) => (
