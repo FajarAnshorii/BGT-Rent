@@ -28,33 +28,33 @@ export default function TentangKami() {
 
         {/* Main Content */}
         <div className="max-w-4xl mx-auto">
-          <div className="prose prose-lg mx-auto text-gray-600 text-center mb-12">
-            <p className="text-lg leading-relaxed">
+          <div className="prose prose-sm sm:prose-lg mx-auto text-gray-600 mb-12">
+            <p className="text-sm sm:text-lg leading-relaxed text-justify sm:text-center">
               <strong className="text-gray-900">{COMPANY.brand}</strong> adalah layanan rental kendaraan dari{' '}
               <strong className="text-gray-900">{COMPANY.name}</strong> yang hadir untuk mendukung kebutuhan transportasi perusahaan, instansi, proyek, dan pelanggan non-industri.
             </p>
-            <p className="text-lg leading-relaxed mt-6">
+            <p className="text-sm sm:text-lg leading-relaxed mt-4 text-justify sm:text-center">
               Transportasi merupakan salah satu aspek penting dalam menjaga kelancaran operasional bisnis. Indonesia sebagai negara kepulauan membutuhkan moda transportasi yang handal, efisien, dan mudah diakses. Karena itu, kami hadir menyediakan jasa dan produk transportasi yang unggul untuk mendukung pemerataan pertumbuhan perekonomian di Indonesia.
             </p>
-            <p className="text-lg leading-relaxed mt-6">
+            <p className="text-sm sm:text-lg leading-relaxed mt-4 text-justify sm:text-center">
               {COMPANY.name} menyediakan rental kendaraan untuk kebutuhan Industry dan Non-Industry, dengan skema sewa bulanan maupun tahunan yang dapat disesuaikan dengan kebutuhan operasional pelanggan.
             </p>
           </div>
 
           {/* Core Values */}
-          <div className="grid md:grid-cols-3 gap-6 mt-12">
+          <div className="grid grid-cols-3 gap-2 sm:gap-6 mt-12">
             {CORE_VALUES.map((value, index) => {
               const IconComponent = VALUE_ICONS[index]
               return (
                 <div
                   key={value.title}
-                  className="card text-center group hover:border-primary-200 border border-transparent"
+                  className="card p-2 sm:p-6 text-center group hover:border-primary-200 border border-transparent"
                 >
-                  <div className="w-14 h-14 bg-primary-100 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary-500 transition-colors">
-                    <IconComponent className="w-7 h-7 text-primary-600 group-hover:text-white transition-colors" />
+                  <div className="w-8 h-8 sm:w-14 sm:h-14 bg-primary-100 rounded-lg sm:rounded-xl flex items-center justify-center mx-auto mb-2 sm:mb-4 group-hover:bg-primary-500 transition-colors">
+                    <IconComponent className="w-4 h-4 sm:w-7 sm:h-7 text-primary-600 group-hover:text-white transition-colors" />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{value.title}</h3>
-                  <p className="text-gray-600">{value.description}</p>
+                  <h3 className="text-xs sm:text-xl font-bold text-gray-900 mb-1 sm:mb-2">{value.title}</h3>
+                  <p className="text-[10px] sm:text-base text-gray-600 leading-tight">{value.description}</p>
                 </div>
               )
             })}

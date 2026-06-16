@@ -16,42 +16,40 @@ export default function Pelanggan() {
           </p>
         </div>
 
-        {/* Industry Customers */}
-        <div className="max-w-4xl mx-auto mb-12">
-          <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center">
-                <Factory className="w-6 h-6 text-primary-600" />
+        <div className="grid grid-cols-2 gap-3 sm:gap-6 max-w-5xl mx-auto">
+          {/* Industry Customers */}
+          <div className="bg-white rounded-2xl p-3 sm:p-8 shadow-sm border border-gray-100 flex flex-col h-full">
+            <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+              <div className="w-8 h-8 sm:w-12 sm:h-12 bg-primary-100 rounded-lg sm:rounded-xl flex items-center justify-center flex-shrink-0">
+                <Factory className="w-4 h-4 sm:w-6 sm:h-6 text-primary-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900">Industry</h3>
+              <h3 className="text-sm sm:text-xl font-bold text-gray-900">Industry</h3>
             </div>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-4 flex-1">
               {CUSTOMERS_INDUSTRY.map((customer) => (
                 <div
                   key={customer}
-                  className="px-4 py-3 bg-gray-50 rounded-lg text-center font-medium text-gray-700 hover:bg-primary-50 hover:text-primary-700 transition-colors"
+                  className="px-2 sm:px-4 py-2 sm:py-3 bg-gray-50 rounded-lg text-center font-medium text-gray-700 hover:bg-primary-50 hover:text-primary-700 transition-colors text-[10px] sm:text-sm leading-snug flex items-center justify-center"
                 >
                   {customer}
                 </div>
               ))}
             </div>
           </div>
-        </div>
 
-        {/* Non-Industry Customers */}
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center">
-                <Building2 className="w-6 h-6 text-primary-600" />
+          {/* Non-Industry Customers */}
+          <div className="bg-white rounded-2xl p-3 sm:p-8 shadow-sm border border-gray-100 flex flex-col h-full">
+            <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+              <div className="w-8 h-8 sm:w-12 sm:h-12 bg-primary-100 rounded-lg sm:rounded-xl flex items-center justify-center flex-shrink-0">
+                <Building2 className="w-4 h-4 sm:w-6 sm:h-6 text-primary-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900">Non-Industry</h3>
+              <h3 className="text-sm sm:text-xl font-bold text-gray-900">Non-Industry</h3>
             </div>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-4 flex-1">
               {CUSTOMERS_NON_INDUSTRY.map((customer) => (
                 <div
                   key={customer}
-                  className="px-4 py-3 bg-gray-50 rounded-lg text-center font-medium text-gray-700 hover:bg-primary-50 hover:text-primary-700 transition-colors"
+                  className="px-2 sm:px-4 py-2 sm:py-3 bg-gray-50 rounded-lg text-center font-medium text-gray-700 hover:bg-primary-50 hover:text-primary-700 transition-colors text-[10px] sm:text-sm leading-snug flex items-center justify-center"
                 >
                   {customer}
                 </div>
